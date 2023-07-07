@@ -1,0 +1,156 @@
+header{
+    background-color:rgb(19, 18, 18);
+    color: #f7f1f1;
+}
+header h1{
+    text-align: center;
+}
+footer {
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(19, 18, 18);
+    color:#f7f1f1 ;
+    bottom: 100%;
+    position: relative;
+    
+}
+#p1{ 
+    text-align: center;
+    color: #f7f1f1;
+    text-transform: uppercase;
+    height: auto 1px;
+    width: auto 2px;
+    margin-top: 30px;
+
+}
+#div5{
+    text-align: center;
+    color: #951b1b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    
+}
+  *{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo chettan 2";
+}
+.radio{
+    display: none;
+}
+body{
+    background: rgb(68, 67, 64);
+}
+.container{
+    position: relative;
+    max-width: 800px;
+    margin: 5% auto;
+    background-color: #951b1b;
+}
+#div5 input{
+    background-color: rgb(68, 67, 64);
+}
+.slider{
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+    background: #141414;
+    overflow: hidden;
+    border: solid 1px #2e2e2e;
+    box-shadow: 0 0 40px rgb(175, 153, 86);
+    
+}
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+    opacity: 0;
+    
+}
+.slide img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+transform: scale(1.1);
+transition: 1.3s;
+}
+.caption{
+    position: absolute;
+    width: 100%;
+    left: 5%;
+    top: -100%;
+    color: #ffeb3b;
+    font-weight: 900;
+    font-size: 50px;
+    
+    letter-spacing: -3px;
+    line-height: 50px;
+    transition: 0.9s;
+}
+.caption span{
+    display: block;
+    text-transform: initial;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+.dots{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .dots label{
+width: 15px;
+height: 15px;
+background: #fff;
+margin: 0 10px;
+border-radius: 50%;
+opacity: 0.3;
+cursor: pointer;
+transition: 0.2s ease-in-out;
+    }
+    .dots label:hover{
+    opacity: 0.7;
+    }
+    #radio-1:checked ~ #slide-1,
+    #radio-2:checked ~ #slide-2,
+    #radio-3:checked ~ #slide-3,
+    #radio-4:checked ~ #slide-4{
+    opacity: 1;
+    }
+    #radio-1:checked ~ #slide-1 img,
+    #radio-2:checked ~ #slide-2 img,
+    #radio-3:checked ~ #slide-3 img,
+    #radio-4:checked ~ #slide-4 img{
+    transform: scale(1);
+    }
+    #radio-1:checked ~ #slide-1 .caption,
+    #radio-2:checked ~ #slide-2 .caption,
+    #radio-3:checked ~ #slide-3 .caption,
+    #radio-4:checked ~ #slide-4 .caption{
+    opacity: 1;
+    top: 7%;
+    font-size: 80px;
+    } 
+    #radio-1:checked ~ .dots #label-1,
+    #radio-2:checked ~ .dots #label-2,
+    #radio-3:checked ~ .dots #label-3,
+    #radio-4:checked ~ .dots #label-4{
+    background: #ffeb3b;
+    opacity: 1;
+    }
